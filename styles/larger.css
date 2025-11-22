@@ -1,0 +1,37 @@
+@media (min-width: 700px) {
+
+  /* NAV horizontal */
+  #menu-toggle {
+    display: none;
+  }
+
+  #primary-nav {
+    display: block;
+  }
+
+  #primary-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #primary-nav a {
+    border-top: none;
+    border-right: 1px solid #222;
+    padding: 0.8rem 1.3rem;
+  }
+
+  #primary-nav li:last-child a {
+    border-right: none;
+  }
+
+  /* About + Photo side by side */
+  .about-student {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  /* Course cards in 3 columns */
+  .course-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

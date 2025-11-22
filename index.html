@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 Course Home Page for Osvaldo João" />
+  <meta name="author" content="Osvaldo João" />
+  <title>WDD 231 | Home</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS (always with defer) -->
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="brand">
+        <img src="images/logo-svg.svg" alt="Osvaldo João site logo" class="logo">
+        <span class="site-name">OSVALDO DEQUERENE JOÃO</span>
+      </div>
+
+      <!-- hamburger -->
+      <button id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber/index.html">Chamber Project</a></li>
+        <li><a href="final/index.html">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <!-- About + Photo -->
+    <section class="about-student">
+      <article class="about-me card">
+        <h2>About Me</h2>
+        <p>
+         My name is Osvaldo Dequerene João, and I'm a software development student from Mozambique currently studying in Utah. 
+         I'm enrolled in BYU Pathway Worldwide, where I'm building a strong foundation in web development, databases, and programming. 
+         I've worked on multiple academic projects using HTML, CSS, JavaScript, Python, and SQL, and I'm passionate about turning ideas into real digital products. 
+         I also served a two-year volunteer mission in Angola, where I worked as a Technology and Finance Secretary, supporting mission offices with troubleshooting, device setup, and organization of financial records. 
+         That experience strengthened my technical skills, discipline, and attention to detail. I'm a fast learner, adaptable, and motivated by challenges. 
+         My long-term goal is to become a professional software engineer and entrepreneur, creating opportunities for young IT talents and helping build a strong tech ecosystem in Mozambique.
+          
+        </p>
+      </article>
+
+      <article class="student-photo card">
+        <h2>Student Photo</h2>
+        <div class="photo-frame">
+          <img src="images/Student-photo.jpg.jpg" loading="lazy">
+        </div>
+      </article>
+    </section>
+
+    <!-- Certificate Courses -->
+    <section class="certificate card">
+      <h2>Web Certificate Courses</h2>
+
+      <div class="course-filters">
+        <button type="button" data-filter="all" class="filter-btn active">All</button>
+        <button type="button" data-filter="cse" class="filter-btn">CSE</button>
+        <button type="button" data-filter="wdd" class="filter-btn">WDD</button>
+      </div>
+
+      <div id="course-cards" class="course-cards">
+        <!-- JS inserts cards here -->
+      </div>
+
+      <p class="credits-info">
+        The total credits for courses listed above is
+        <span id="total-credits">0</span>
+      </p>
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/login/pt?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/Dequerene" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">GitHub</a>
+        <a href="#" target="_blank" rel="noopener" class="social-icon" aria-label="X">X</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> •
+      <span class="footer-name">Osvaldo João</span> •
+      <span class="footer-location">Utah, USA</span>
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
