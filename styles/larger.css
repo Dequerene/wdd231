@@ -1,6 +1,6 @@
 @media (min-width: 700px) {
 
-  /* NAV horizontal */
+
   #menu-toggle {
     display: none;
   }
@@ -24,13 +24,13 @@
     border-right: none;
   }
 
-  /* About + Photo side by side */
+  
   .about-student {
     grid-template-columns: 2fr 1fr;
     align-items: start;
   }
 
-  /* Course cards in 3 columns */
+ 
   .course-cards {
     grid-template-columns: repeat(3, 1fr);
   }

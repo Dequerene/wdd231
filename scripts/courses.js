@@ -54,5 +54,5 @@ filterButtons.forEach(btn => {
   });
 });
 
-// initial load
+
 renderCourses(courses);
