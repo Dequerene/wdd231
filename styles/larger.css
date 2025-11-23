@@ -1,13 +1,7 @@
 @media (min-width: 700px) {
 
-
-  #menu-toggle {
-    display: none;
-  }
-
-  #primary-nav {
-    display: block;
-  }
+  #menu-toggle { display: none; }
+  #primary-nav { display: block; }
 
   #primary-nav ul {
     display: flex;
@@ -16,21 +10,18 @@
 
   #primary-nav a {
     border-top: none;
-    border-right: 1px solid #222;
+    border-right: 1px solid #0b1226;
     padding: 0.8rem 1.3rem;
   }
+  #primary-nav li:last-child a { border-right: none; }
 
-  #primary-nav li:last-child a {
-    border-right: none;
-  }
 
-  
   .about-student {
     grid-template-columns: 2fr 1fr;
     align-items: start;
   }
 
- 
+
   .course-cards {
     grid-template-columns: repeat(3, 1fr);
   }
