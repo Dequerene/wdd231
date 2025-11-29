@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Provo Chamber of Commerce | Home</title>
+  <meta name="description" content="The Provo Chamber of Commerce connects local businesses, promotes growth, and strengthens the community." />
+  <meta name="author" content="Osvaldo Dequerene João" />
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Provo Chamber of Commerce" />
+  <meta property="og:description" content="Connect with local businesses, events, and opportunities in Provo." />
+  <meta property="og:image" content="https://dequerene.github.io/wdd231/chamber/images/og-image.jpg" />
+  <meta property="og:url" content="https://dequerene.github.io/wdd231/chamber/index.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Provo Chamber of Commerce logo" class="logo" />
+        <span class="site-title">Provo Chamber of Commerce</span>
+      </a>
+
+      <button id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="primaryNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO COM CTA SOBRE A IMAGEM -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Connecting Provo’s Business Community</h1>
+        <p>
+          The Provo Chamber of Commerce supports local businesses through networking,
+          advocacy, and community events. Join us and help shape the future of Provo.
+        </p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- GRID: EVENTOS + CLIMA -->
+    <section class="home-grid">
+      <!-- CURRENT EVENTS -->
+      <section class="events">
+        <h2>Current Events</h2>
+
+        <article class="event-card">
+          <h3>Provo Business Networking Breakfast</h3>
+          <p class="event-date">February 15, 2025 · 8:00 AM</p>
+          <p class="event-location">Downtown Conference Center</p>
+          <p>
+            Meet local entrepreneurs, share ideas, and discover new partnerships in Provo’s growing business community.
+          </p>
+        </article>
+
+        <article class="event-card">
+          <h3>Small Business Workshop: Digital Marketing</h3>
+          <p class="event-date">February 22, 2025 · 6:30 PM</p>
+          <p class="event-location">Provo Library · Room 201</p>
+          <p>
+            Learn practical strategies to improve your online presence and attract more customers.
+          </p>
+        </article>
+      </section>
+
+      <!-- WEATHER -->
+      <section class="weather" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Provo Weather</h2>
+
+        <div class="weather-current">
+          <p class="weather-temp">
+            <span id="current-temp">--</span><span class="unit">°F</span>
+          </p>
+          <p id="current-desc">Loading weather...</p>
+        </div>
+
+        <div class="weather-forecast" id="forecast">
+          <!-- 3-day forecast via JS -->
+        </div>
+
+        <p class="weather-note">Weather data powered by OpenWeatherMap.</p>
+      </section>
+    </section>
+
+    <!-- SPOTLIGHTS -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <p class="spotlights-subtitle">
+        Featured Silver and Gold members of the Provo Chamber of Commerce.
+      </p>
+
+      <div id="spotlightsContainer" class="spotlights-container">
+        <!-- Spotlights via JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h2>Contact</h2>
+      <p>Provo Chamber of Commerce</p>
+      <p>123 Center St, Provo, UT 84601</p>
+      <p>Phone: (801) 555-1234</p>
+      <p>Email: info@provochamber.org</p>
+    </div>
+
+    <div class="footer-social">
+    <a href="https://youtube.com" class="social-icon youtube" aria-label="YouTube">
+      <span>▶</span>
+    </a>
+    <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn">
+      <span>in</span>
+    </a>
+    <a href="https://facebook.com" class="social-icon facebook" aria-label="Facebook">
+      <span>f</span>
+    </a>
+  </div>
+
+    <div class="footer-meta">
+      <p>&copy; <span id="currentYear"></span> Provo Chamber of Commerce</p>
+      <p>Created by: Osvaldo Dequerene João | WDD 231</p>
+      <p>Last modification: <span id="lastModified"></span></p>
+
+      <p class="validators">
+        <a href="https://validator.w3.org/nu/?doc=https://dequerene.github.io/wdd231/chamber/index.html" target="_blank" rel="noopener">
+          W3C HTML Validator
+        </a>
+        |
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dequerene.github.io/wdd231/chamber/styles/home.css" target="_blank" rel="noopener">
+          W3C CSS Validator
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</body>
+</html>

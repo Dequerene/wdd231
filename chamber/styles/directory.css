@@ -58,7 +58,9 @@
 /* Cards */
 
 .member-card {
-  background-color: var(--primary-light);
+  background-color: #ffffff;
+  /* 🔹 borda PRETA para todos os cards */
+  border: 1px solid #000000;
   border-radius: var(--radius);
   padding: 0.75rem;
   display: grid;
@@ -117,14 +119,20 @@
   color: var(--primary);
 }
 
-/* Destaque por nível */
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+/* Destaque por nível (sem mudar a cor, só o estilo) */
 
 .member-card[data-level="3"] {
-  border: 2px solid var(--accent);
+  /* Gold: borda mais grossa */
+  border-width: 2px;
 }
 
 .member-card[data-level="2"] {
-  border: 1px solid var(--accent);
+  /* Silver: borda tracejada */
+  border-style: dashed;
 }
 
 @media (max-width: 480px) {

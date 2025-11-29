@@ -26,7 +26,8 @@
 <body>
   <header>
     <div class="header-top">
-      <a href="../index.html" class="brand">
+      <!-- 🔹 AQUI: logo agora aponta para o HOME do chamber -->
+      <a href="index.html" class="brand">
         <img src="images/logo.svg" alt="Provo Chamber of Commerce logo" class="logo" />
         <span class="site-title">Provo Chamber of Commerce</span>
       </a>
@@ -38,7 +39,8 @@
 
     <nav id="primaryNav" aria-label="Main navigation">
       <ul>
-        <li><a href="../index.html">Home</a></li>
+        <!-- 🔹 AQUI: link Home também aponta para index.html dentro de chamber -->
+        <li><a href="index.html">Home</a></li>
         <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="join.html">Join</a></li>
@@ -64,17 +66,30 @@
 
   <footer>
     <div class="footer-contact">
-      <h2>Contact</h2>
-      <p>Provo Chamber of Commerce</p>
-      <p>123 Center St, Provo, UT 84601</p>
-      <p>Phone: (801) 555-1234</p>
-      <p>Email: info@provochamber.org</p>
+      <h2>Provo Chamber of Commerce</h2>
+      <p>123 Center St</p>
+      <p>Provo, UT 84601</p>
+      <p>info@provochamber.org</p>
+      <p>(801) 555-1234</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://youtube.com" class="social-icon youtube" aria-label="YouTube">
+        <span>▶</span>
+      </a>
+      <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn">
+        <span>in</span>
+      </a>
+      <a href="https://facebook.com" class="social-icon facebook" aria-label="Facebook">
+        <span>f</span>
+      </a>
     </div>
 
     <div class="footer-meta">
-      <p>&copy; <span id="currentYear"></span> Provo Chamber of Commerce</p>
-      <p>Created by: Osvaldo Dequerene João | WDD 231</p>
-      <p>Last modification: <span id="lastModified"></span></p>
+      <p>WDD231 Class Project</p>
+      <p>Osvaldo Dequerene João</p>
+      <p>© <span id="currentYear"></span> Provo Chamber of Commerce</p>
+      <p>Last modified: <span id="lastModified"></span></p>
     </div>
   </footer>
 

@@ -1,0 +1,258 @@
+/* HERO: imagem de fundo + overlay de texto e CTA */
+
+.hero {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-height: 220px;
+  background-image: url("../images/hero.jpg"); /* deixa essa imagem bem otimizada (<200kb) */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* leve gradiente para melhorar contraste do texto */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.hero-overlay {
+  position: relative;
+  padding: 1.2rem;
+  color: #ffffff;
+  max-width: 540px;
+}
+
+.hero-overlay h1 {
+  margin: 0 0 0.5rem;
+}
+
+.hero-overlay p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+/* CTA sobre a imagem */
+.cta-button {
+  display: inline-block;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  background-color: var(--accent);
+  color: #222222;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.cta-button:hover {
+  filter: brightness(0.95);
+}
+
+/* GRID: eventos + clima */
+
+.home-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.events,
+.weather {
+  background-color: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.events h2,
+.weather h2 {
+  margin-top: 0;
+}
+
+/* Eventos */
+
+.event-card {
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.event-card h3 {
+  margin: 0 0 0.25rem;
+}
+
+.event-date {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.event-location {
+  margin: 0.1rem 0 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Weather */
+
+.weather-current {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.weather-temp {
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.weather-temp .unit {
+  font-size: 1rem;
+}
+
+#current-desc {
+  margin: 0;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+
+.weather-forecast {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.forecast-day {
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.forecast-day span.label {
+  font-weight: 600;
+}
+
+.weather-note {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* SPOTLIGHTS */
+
+.spotlights {
+  margin-bottom: 2rem;
+}
+
+.spotlights h2 {
+  margin-bottom: 0.25rem;
+}
+
+.spotlights-subtitle {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.spotlights-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  background-color: var(--primary-light);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.spotlight-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.spotlight-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.spotlight-card p {
+  margin: 0.1rem 0;
+  font-size: 0.85rem;
+}
+
+.spotlight-level {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.spotlight-card a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* RESPONSIVO – mudança de layout entre mobile e desktop */
+
+@media (min-width: 720px) {
+  .hero {
+    min-height: 280px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .hero-overlay {
+    padding: 1.8rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 2fr 1.2fr; /* eventos | clima */
+  }
+
+  .spotlights-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .spotlight-card {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight-card img {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .spotlight-card {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight-card img {
+    margin: 0 auto;
+  }
+}
