@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Provo Chamber of Commerce</title>
+  <desc id="desc">Simple icon with a blue square, white mountain, and yellow sun.</desc>
+
+  <!-- Fundo quadrado azul com cantos arredondados -->
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="#004f7c"></rect>
+
+  <!-- Montanha branca grande -->
+  <path d="M10 46 L26 24 L36 34 L44 26 L54 46 Z" fill="#ffffff"></path>
+
+  <!-- Pico amarelo na montanha -->
+  <path d="M26 24 L31 30 L21 30 Z" fill="#ffb400"></path>
+
+  <!-- Sol amarelo -->
+  <circle cx="40" cy="18" r="6" fill="#ffb400"></circle>
+</svg>

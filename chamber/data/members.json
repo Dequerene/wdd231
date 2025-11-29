@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Provo Tech Solutions",
+      "address": "45 University Ave, Provo, UT 84604",
+      "phone": "(801) 555-0101",
+      "website": "https://provotech.example.com",
+      "image": "images/members/provo-tech-logo.png",
+      "membershipLevel": 3,
+      "description": "IT consulting, cloud services, and software development for local businesses."
+    },
+    {
+      "name": "Center Street Café",
+      "address": "120 W Center St, Provo, UT 84601",
+      "phone": "(801) 555-0202",
+      "website": "https://centerstreetcafe.example.com",
+      "image": "images/members/center-cafe-logo.png",
+      "membershipLevel": 2,
+      "description": "Cozy café offering breakfast, lunch, and locally roasted coffee."
+    },
+    {
+      "name": "Wasatch Outdoor Gear",
+      "address": "300 N 100 W, Provo, UT 84601",
+      "phone": "(801) 555-0303",
+      "website": "https://wasatchoutdoor.example.com",
+      "image": "images/members/wasatch-outdoorlogo.png",
+      "membershipLevel": 1,
+      "description": "Outdoor clothing, camping gear, and equipment rentals."
+    },
+    {
+      "name": "Utah Valley Dental Group",
+      "address": "789 E 800 N, Provo, UT 84606",
+      "phone": "(801) 555-0404",
+      "website": "https://uvdental.example.com",
+      "image": "images/members/dental-group-logo.png",
+      "membershipLevel": 3,
+      "description": "Family dental care and cosmetic dentistry services."
+    },
+    {
+      "name": "Provo Fitness Center",
+      "address": "600 S Freedom Blvd, Provo, UT 84601",
+      "phone": "(801) 555-0505",
+      "website": "https://provofitness.example.com",
+      "image": "images/members/provo-fitness-logo.png",
+      "membershipLevel": 2,
+      "description": "Gym, group classes, and personal training."
+    },
+    {
+      "name": "Rock Canyon Real Estate",
+      "address": "95 N 200 E, Provo, UT 84606",
+      "phone": "(801) 555-0606",
+      "website": "https://rockcanyonrealty.example.com",
+      "image": "images/members/real-estate-logo.png",
+      "membershipLevel": 1,
+      "description": "Residential and commercial real estate services."
+    },
+    {
+      "name": "Provo Arts Collective",
+      "address": "210 S University Ave, Provo, UT 84601",
+      "phone": "(801) 555-0707",
+      "website": "https://provoarts.example.com",
+      "image": "images/members/provo-arts-logo.png",
+      "membershipLevel": 2,
+      "description": "Local gallery, workshops, and community events for artists."
+    }
+  ]
+}
