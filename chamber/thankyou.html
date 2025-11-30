@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Provo Chamber of Commerce | Thank You</title>
+  <meta name="description" content="Thank you for applying to join the Provo Chamber of Commerce." />
+  <meta name="author" content="Osvaldo Dequerene João" />
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Provo Chamber of Commerce logo" class="logo" />
+        <span class="site-title">Provo Chamber of Commerce</span>
+      </a>
+
+      <button id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="primaryNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="join-intro">
+      <h1>Thank You for Your Application</h1>
+      <p>
+        We have received your membership application. A chamber representative will contact you soon.
+      </p>
+    </section>
+
+    <section class="join-summary">
+      <h2>Your Submitted Information</h2>
+
+      <div class="summary-grid">
+        <div>
+          <h3>First Name</h3>
+          <p id="summary-firstName">—</p>
+        </div>
+        <div>
+          <h3>Last Name</h3>
+          <p id="summary-lastName">—</p>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p id="summary-email">—</p>
+        </div>
+        <div>
+          <h3>Mobile Phone</h3>
+          <p id="summary-phone">—</p>
+        </div>
+        <div>
+          <h3>Business / Organization</h3>
+          <p id="summary-organization">—</p>
+        </div>
+        <div>
+          <h3>Submitted On</h3>
+          <p id="summary-timestamp">—</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h2>Contact</h2>
+      <p>Provo Chamber of Commerce</p>
+      <p>123 Center St, Provo, UT 84601</p>
+      <p>Phone: (801) 555-1234</p>
+      <p>Email: info@provochamber.org</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://youtube.com" class="social-icon youtube" aria-label="YouTube">
+        <span>▶</span>
+      </a>
+      <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn">
+        <span>in</span>
+      </a>
+      <a href="https://facebook.com" class="social-icon facebook" aria-label="Facebook">
+        <span>f</span>
+      </a>
+    </div>
+
+    <div class="footer-meta">
+      <p>&copy; <span id="currentYear"></span> Provo Chamber of Commerce</p>
+      <p>Created by: Osvaldo Dequerene João | WDD 231</p>
+      <p>Last modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</body>
+</html>

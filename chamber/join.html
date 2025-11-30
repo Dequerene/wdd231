@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Provo Chamber of Commerce | Join</title>
+  <meta name="description" content="Apply to join the Provo Chamber of Commerce and connect with local businesses and opportunities." />
+  <meta name="author" content="Osvaldo Dequerene João" />
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Join the Provo Chamber of Commerce" />
+  <meta property="og:description" content="Become a member of the Provo Chamber and strengthen your business connections." />
+  <meta property="og:image" content="https://dequerene.github.io/wdd231/chamber/images/og-image.jpg" />
+  <meta property="og:url" content="https://dequerene.github.io/wdd231/chamber/join.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Provo Chamber of Commerce logo" class="logo" />
+        <span class="site-title">Provo Chamber of Commerce</span>
+      </a>
+
+      <button id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="primaryNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INTRO -->
+    <section class="join-intro">
+      <h1>Join the Provo Chamber of Commerce</h1>
+      <p>
+        Complete the membership application form to join the Provo Chamber of Commerce.
+        We’ll review your application and contact you with next steps.
+      </p>
+    </section>
+
+    <!-- GRID: FORM + CARDS (mobile = em coluna / desktop = lado a lado) -->
+    <section class="join-layout">
+      <!-- FORMULÁRIO -->
+      <section class="join-form-section">
+        <h2>Membership Application</h2>
+
+        <!-- 🔹 method=get e action=thankyou.html (rubrica) -->
+        <form id="joinForm" method="get" action="thankyou.html">
+          <!-- First Name (required) -->
+          <label>
+            <span>First Name*</span>
+            <input
+              type="text"
+              name="firstName"
+              required
+              autocomplete="given-name"
+              title="Enter your first name"
+            />
+          </label>
+
+          <!-- Last Name (required) -->
+          <label>
+            <span>Last Name*</span>
+            <input
+              type="text"
+              name="lastName"
+              required
+              autocomplete="family-name"
+              title="Enter your last name"
+            />
+          </label>
+
+          <!-- Organizational Title (pattern, mínimo 7 caracteres) -->
+          <label>
+            <span>Organization Title</span>
+            <input
+              type="text"
+              name="organizationTitle"
+              autocomplete="organization-title"
+              title="Your title in the organization (letters, hyphens, spaces, at least 7 characters)"
+              pattern="[A-Za-z -]{7,}"
+              placeholder="Marketing Manager"
+            />
+          </label>
+
+          <!-- Email (required + placeholder) -->
+          <label>
+            <span>Email*</span>
+            <input
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+              title="Enter a valid email address"
+              placeholder="example@email.com"
+            />
+          </label>
+
+          <!-- Mobile Phone (required) -->
+          <label>
+            <span>Mobile Phone*</span>
+            <input
+              type="tel"
+              name="phone"
+              required
+              autocomplete="tel"
+              title="Enter your mobile phone number"
+              placeholder="+1 801 555 1234"
+            />
+          </label>
+
+          <!-- Business / Organization Name (required) -->
+          <label>
+            <span>Business / Organization Name*</span>
+            <input
+              type="text"
+              name="organization"
+              required
+              autocomplete="organization"
+              title="Enter your business or organization name"
+            />
+          </label>
+
+          <!-- Membership Level (4 opções com valores np/bronze/silver/gold) -->
+          <label>
+            <span>Membership Level</span>
+            <select
+              name="membership"
+              title="Select a membership level"
+              autocomplete="off"
+            >
+              <option value="np">NP Membership (Non Profit)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <!-- Business / Organization Description -->
+          <label>
+            <span>Business / Organization Description</span>
+            <textarea
+              name="description"
+              rows="4"
+              title="Describe your business or organization"
+              placeholder="Tell us briefly about your mission, services, and goals."
+            ></textarea>
+          </label>
+
+          <!-- Timestamp (hidden) -->
+          <label class="hidden-label">
+            <span>Application Timestamp</span>
+            <input type="hidden" name="timestamp" id="timestamp" />
+          </label>
+
+          <!-- Submit -->
+          <input type="submit" value="Submit Application" class="submit-btn" />
+        </form>
+      </section>
+
+      <!-- CARDS DE NÍVEL DE MEMBRESIA -->
+      <section class="membership-cards-section">
+        <h2>Membership Levels</h2>
+        <p class="membership-text">
+          Choose the level that best fits your organization’s needs. Click to see the benefits.
+        </p>
+
+        <div class="membership-cards">
+          <!-- NP Membership -->
+          <article class="membership-card level-np" data-level="np">
+            <h3>NP Membership</h3>
+            <p class="price">No fee · Non-profit organizations only</p>
+            <p class="short-desc">Perfect for registered non-profit organizations.</p>
+            <button type="button" class="benefits-btn" data-modal="modal-np">
+              View benefits
+            </button>
+          </article>
+
+          <!-- Bronze Membership -->
+          <article class="membership-card level-bronze" data-level="bronze">
+            <h3>Bronze Membership</h3>
+            <p class="price">Entry level · Great for small businesses</p>
+            <p class="short-desc">Get access to events and basic chamber benefits.</p>
+            <button type="button" class="benefits-btn" data-modal="modal-bronze">
+              View benefits
+            </button>
+          </article>
+
+          <!-- Silver Membership -->
+          <article class="membership-card level-silver" data-level="silver">
+            <h3>Silver Membership</h3>
+            <p class="price">Growing businesses · More visibility</p>
+            <p class="short-desc">Includes advertising and spotlight opportunities.</p>
+            <button type="button" class="benefits-btn" data-modal="modal-silver">
+              View benefits
+            </button>
+          </article>
+
+          <!-- Gold Membership -->
+          <article class="membership-card level-gold" data-level="gold">
+            <h3>Gold Membership</h3>
+            <p class="price">Premium · Maximum exposure</p>
+            <p class="short-desc">Top-tier benefits, sponsorships, and VIP access.</p>
+            <button type="button" class="benefits-btn" data-modal="modal-gold">
+              View benefits
+            </button>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- MODAIS DOS BENEFÍCIOS (1 por nível) -->
+    <dialog id="modal-np" class="membership-modal">
+      <h2>NP Membership Benefits</h2>
+      <ul>
+        <li>No membership fee for qualified non-profit organizations.</li>
+        <li>Access to chamber networking events.</li>
+        <li>Listing in the online chamber directory.</li>
+        <li>Discounted training opportunities.</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-modal">
+      <h2>Bronze Membership Benefits</h2>
+      <ul>
+        <li>All NP benefits.</li>
+        <li>Invitation to member-only workshops.</li>
+        <li>Business name mentioned in chamber newsletters.</li>
+        <li>Basic event discount rates.</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+      <h2>Silver Membership Benefits</h2>
+      <ul>
+        <li>All Bronze benefits.</li>
+        <li>Spotlight feature on the chamber home page.</li>
+        <li>Enhanced directory listing with logo.</li>
+        <li>Priority booth selection at chamber expos.</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+      <h2>Gold Membership Benefits</h2>
+      <ul>
+        <li>All Silver benefits.</li>
+        <li>Premium advertising placement on chamber channels.</li>
+        <li>Sponsorship opportunities at major events.</li>
+        <li>VIP invitations to exclusive leadership roundtables.</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h2>Contact</h2>
+      <p>Provo Chamber of Commerce</p>
+      <p>123 Center St, Provo, UT 84601</p>
+      <p>Phone: (801) 555-1234</p>
+      <p>Email: info@provochamber.org</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://youtube.com" class="social-icon youtube" aria-label="YouTube">
+        <span>▶</span>
+      </a>
+      <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn">
+        <span>in</span>
+      </a>
+      <a href="https://facebook.com" class="social-icon facebook" aria-label="Facebook">
+        <span>f</span>
+      </a>
+    </div>
+
+    <div class="footer-meta">
+      <p>&copy; <span id="currentYear"></span> Provo Chamber of Commerce</p>
+      <p>Created by: Osvaldo Dequerene João | WDD 231</p>
+      <p>Last modification: <span id="lastModified"></span></p>
+
+      <p class="validators">
+        <a href="https://validator.w3.org/nu/?doc=https://dequerene.github.io/wdd231/chamber/join.html" target="_blank" rel="noopener">
+          W3C HTML Validator
+        </a>
+        |
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://dequerene.github.io/wdd231/chamber/styles/join.css" target="_blank" rel="noopener">
+          W3C CSS Validator
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</body>
+</html>
