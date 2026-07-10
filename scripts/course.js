@@ -37,7 +37,7 @@ const courses = [
     certificate: 'Web and Computer Programming',
     description: 'This course teaches object-oriented programming using classes.',
     technology: ['C#'],
-    completed: false
+    completed: true
   },
   {
     subject: 'WDD',
@@ -69,27 +69,19 @@ function displayCourses(courseArray) {
   courseList.innerHTML = '';
 
   courseArray.forEach((course) => {
-    const courseCard = document.createElement('button');
+    const courseCard = document.createElement('div');
 
-    courseCard.type = 'button';
     courseCard.className = course.completed ? 'course-card completed' : 'course-card';
-
     courseCard.innerHTML = `
       ${course.subject} ${course.number}
       <span>${course.completed ? 'Completed' : 'Not completed yet'}</span>
     `;
 
-    courseCard.setAttribute(
-      'aria-label',
-      `${course.subject} ${course.number}: ${course.title}. ${course.completed ? 'Completed' : 'Not completed yet'}.`
-    );
-
     courseList.appendChild(courseCard);
   });
 
   const credits = courseArray.reduce((total, course) => total + course.credits, 0);
-
-  totalCredits.textContent = `The total credits for courses listed above is ${credits}`;
+  totalCredits.textContent = `Total Credits: ${credits}`;
 }
 
 function setActiveButton(selectedButton) {
@@ -107,7 +99,6 @@ filterButtons.forEach((button) => {
     setActiveButton(button);
 
     const filter = button.dataset.filter;
-
     const filteredCourses = filter === 'all'
       ? courses
       : courses.filter((course) => course.subject === filter);
