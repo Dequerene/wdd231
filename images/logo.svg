@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Osvaldo João Website Logo</title>
+  <desc id="logo-desc">A modern blue logo with the initials OJ and a web development symbol.</desc>
+  <defs>
+    <linearGradient id="background-gradient" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e4f7a"/>
+      <stop offset="1" stop-color="#0b1f33"/>
+    </linearGradient>
+    <linearGradient id="accent-gradient" x1="18" y1="14" x2="46" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#background-gradient)"/>
+  <path d="M18 22 10 32l8 10" fill="none" stroke="#dbeafe" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 22 54 32 46 42" fill="none" stroke="#dbeafe" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="19" fill="url(#accent-gradient)" opacity="0.95"/>
+  <path d="M24 24c-4 0-7 3.2-7 8s3 8 7 8 7-3.2 7-8-3-8-7-8Zm0 4c1.8 0 3 1.5 3 4s-1.2 4-3 4-3-1.5-3-4 1.2-4 3-4Z" fill="#0b1f33"/>
+  <path d="M37 24h5v11.2c0 3.6-2.4 5.8-6.1 5.8-2 0-3.7-.6-5-1.8l2.2-3.4c.7.6 1.5 1 2.5 1 1.1 0 1.8-.6 1.8-2V24Z" fill="#0b1f33"/>
+  <circle cx="49" cy="15" r="3" fill="#93c5fd"/>
+  <circle cx="15" cy="49" r="3" fill="#93c5fd"/>
+</svg>

@@ -1,0 +1,43 @@
+@media screen and (min-width: 42rem) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    flex: 1 1 100%;
+  }
+
+  nav a {
+    text-align: center;
+    border-top: none;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .courses-card {
+    grid-column: 1 / 3;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

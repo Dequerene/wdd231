@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231 course home page for Osvaldo João. This page includes navigation, student information, course cards, filters, and dynamic footer dates.">
+  <meta name="author" content="Osvaldo João">
+  <title>WDD 231 Course Home Page | Osvaldo João</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/logo.svg" alt="Site logo" width="56" height="56">
+      <span>Osvaldo João</span>
+    </div>
+    <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav id="navMenu" aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="final/index.html">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="home-grid">
+      <section class="card about-card">
+        <h2>About Me</h2>
+        <p>
+          My name is Osvaldo João, and I am originally from Mozambique. I am currently studying web development and working toward a career in technology. I enjoy learning how to create clean, responsive, accessible, and user-friendly websites that work well on computers, tablets, and mobile devices.
+          My goal is to continue strengthening my programming and software development skills so that I can build useful digital products. In the future, I hope to use technology to create opportunities, support businesses, and help solve problems in communities in Mozambique and around the world. I believe technology can connect people, improve access to information, and make everyday life easier.
+        </p>
+      </section>
+
+      <section class="card photo-card">
+        <h2>Student Photo</h2>
+        <img src="images/profile.jpg" alt="Photo of Osvaldo João" width="400" height="400">
+      </section>
+
+      <section class="card courses-card">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="filter-buttons" aria-label="Course filters">
+          <button type="button" class="filter active-filter" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="CSE" aria-pressed="false">CSE</button>
+          <button type="button" class="filter" data-filter="WDD" aria-pressed="false">WDD</button>
+        </div>
+
+        <div id="course-list" class="course-list" aria-live="polite"></div>
+        <p id="total-credits" class="credits"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/Dequerene/wdd231" target="_blank" rel="noopener" aria-label="GitHub repository">
+        <img src="images/github.svg" alt="" width="32" height="32">
+      </a>
+      <a href="https://www.linkedin.com/in/
+osvaldo-joao-john-523341147
+" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="" width="32" height="32">
+      </a>
+      <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X social profile">
+        <img src="images/x.svg" alt="" width="32" height="32">
+      </a>
+    </div>
+
+    <p>© <span id="currentyear"></span> • Osvaldo João • Utah, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
