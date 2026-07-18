@@ -6,10 +6,7 @@
   #menu {
     display: none;
   }
-.site-branding img {
-  width: 96px;
-  height: 96px;
-}
+
   nav {
     display: block;
   }
@@ -33,6 +30,7 @@
 
   .members-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    min-height: 780px;
   }
 
   .members-list .member-card {

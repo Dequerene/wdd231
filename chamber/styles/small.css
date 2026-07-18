@@ -63,6 +63,12 @@ header {
   font-weight: 700;
 }
 
+.site-branding img {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+}
+
 #menu {
   min-width: 44px;
   min-height: 44px;
@@ -181,10 +187,12 @@ h2 {
 .members-grid {
   display: grid;
   gap: 1rem;
+  min-height: 1450px;
 }
 
 .member-card {
   overflow: hidden;
+  min-height: 382px;
   border: 1px solid var(--border-color);
   border-radius: 0.65rem;
   background-color: var(--card-color);
@@ -208,10 +216,24 @@ h2 {
 
 .member-card img {
   width: 100%;
+  aspect-ratio: 16 / 9;
   max-height: 180px;
   object-fit: cover;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 180px;
+  background-color: var(--accent-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.loading-card {
+  color: var(--muted-color);
 }
 
 .member-details {
@@ -239,11 +261,6 @@ h2 {
   font-weight: 700;
 }
 
-.site-branding img {
-  width: 80px;
-  height: 80px;
-}
-
 .level-1 {
   background-color: var(--member-color);
 }
@@ -259,6 +276,7 @@ h2 {
 .members-list {
   display: grid;
   gap: 0.75rem;
+  min-height: auto;
 }
 
 .members-list .member-card {

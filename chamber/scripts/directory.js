@@ -46,7 +46,7 @@ function getMembershipName(level) {
 function displayMembers(members) {
   membersContainer.innerHTML = '';
 
-  members.forEach((member) => {
+  members.forEach((member, index) => {
     const card = document.createElement('section');
     const name = document.createElement('h3');
     const tagline = document.createElement('p');
@@ -65,7 +65,12 @@ function displayMembers(members) {
 
     image.setAttribute('src', `images/${member.image}`);
     image.setAttribute('alt', `${member.name} business logo`);
-    image.setAttribute('loading', 'lazy');
+    image.setAttribute('loading', index === 0 ? 'eager' : 'lazy');
+
+    if (index === 0) {
+      image.setAttribute('fetchpriority', 'high');
+    }
+
     image.setAttribute('width', '320');
     image.setAttribute('height', '180');
 
