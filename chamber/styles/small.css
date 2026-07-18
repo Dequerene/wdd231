@@ -1,0 +1,320 @@
+:root {
+  --primary-color: #17324d;
+  --secondary-color: #1f6f8b;
+  --accent-color: #dbeafe;
+  --background-color: #f1f5f9;
+  --card-color: #ffffff;
+  --text-color: #172033;
+  --muted-color: #475569;
+  --border-color: #cbd5e1;
+  --gold-color: #7a5a00;
+  --silver-color: #52606d;
+  --member-color: #245b45;
+  --shadow: 0 4px 16px rgba(15, 23, 42, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--card-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-branding span {
+  color: var(--primary-color);
+  font-size: clamp(1.1rem, 4vw, 1.8rem);
+  font-weight: 700;
+}
+
+#menu {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--border-color);
+  border-radius: 0.35rem;
+  color: var(--primary-color);
+  background-color: var(--card-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#menu:hover,
+#menu:focus-visible {
+  background-color: var(--accent-color);
+}
+
+nav {
+  display: none;
+  background-color: var(--primary-color);
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.95rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a.active {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0.4rem 0 1rem;
+  color: var(--primary-color);
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+}
+
+h2 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.directory-intro,
+.view-controls,
+.member-section {
+  margin-bottom: 1rem;
+}
+
+.directory-intro,
+.view-controls {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.65rem;
+  background-color: var(--card-color);
+  box-shadow: var(--shadow);
+}
+
+.directory-intro p {
+  margin-bottom: 0;
+}
+
+.view-controls {
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.button-group button {
+  min-width: 96px;
+  min-height: 44px;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.35rem;
+  color: var(--primary-color);
+  background-color: var(--card-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-group button:hover,
+.button-group button:focus-visible,
+.button-group button.active-view {
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+.member-section > h2 {
+  margin-bottom: 1rem;
+}
+
+.members-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.member-card {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 0.65rem;
+  background-color: var(--card-color);
+  box-shadow: var(--shadow);
+}
+
+.member-card h3 {
+  margin: 0;
+  padding: 0.85rem 1rem 0.25rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.member-card .tagline {
+  margin: 0;
+  padding: 0 1rem 0.75rem;
+  color: var(--muted-color);
+  text-align: center;
+}
+
+.member-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.member-details {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+}
+
+.member-details p {
+  margin: 0;
+}
+
+.member-details a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.membership {
+  display: inline-block;
+  justify-self: start;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.site-branding img {
+  width: 80px;
+  height: 80px;
+}
+
+.level-1 {
+  background-color: var(--member-color);
+}
+
+.level-2 {
+  background-color: var(--silver-color);
+}
+
+.level-3 {
+  background-color: var(--gold-color);
+}
+
+.members-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.members-list .member-card {
+  display: grid;
+  gap: 0;
+  padding: 0.75rem;
+}
+
+.members-list .member-card img,
+.members-list .member-card .tagline {
+  display: none;
+}
+
+.members-list .member-card h3 {
+  padding: 0 0 0.35rem;
+  text-align: left;
+}
+
+.members-list .member-details {
+  padding: 0;
+}
+
+footer {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.footer-info {
+  text-align: left;
+}

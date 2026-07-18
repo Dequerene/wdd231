@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "Provo Tech Solutions",
+      "address": "45 University Avenue, Provo, UT 84601",
+      "phone": "(801) 555-1010",
+      "website": "https://example.com/provo-tech-solutions",
+      "displayUrl": "provotech.example",
+      "image": "provo-tech-solutions.webp",
+      "membershipLevel": 3,
+      "category": "Technology",
+      "tagline": "Innovation, reliability, and support"
+    },
+    {
+      "name": "Wasatch Family Dental",
+      "address": "1200 North Canyon Road, Provo, UT 84604",
+      "phone": "(801) 555-2020",
+      "website": "https://example.com/wasatch-family-dental",
+      "displayUrl": "wasatchdental.example",
+      "image": "wasatch-family-dental.webp",
+      "membershipLevel": 2,
+      "category": "Healthcare",
+      "tagline": "Gentle care for the entire family"
+    },
+    {
+      "name": "Center Street Cafe",
+      "address": "88 West Center Street, Provo, UT 84601",
+      "phone": "(801) 555-3030",
+      "website": "https://example.com/center-street-cafe",
+      "displayUrl": "centerstreetcafe.example",
+      "image": "center-street-cafe.webp",
+      "membershipLevel": 1,
+      "category": "Restaurant",
+      "tagline": "Coffee, community, and comfort"
+    },
+    {
+      "name": "Utah Valley Fitness",
+      "address": "305 East Bulldog Boulevard, Provo, UT 84604",
+      "phone": "(801) 555-4040",
+      "website": "https://example.com/utah-valley-fitness",
+      "displayUrl": "uvfitness.example",
+      "image": "utah-valley-fitness.webp",
+      "membershipLevel": 2,
+      "category": "Fitness",
+      "tagline": "Strength, community, and endurance"
+    },
+    {
+      "name": "Provo Print Studio",
+      "address": "610 South Freedom Boulevard, Provo, UT 84601",
+      "phone": "(801) 555-5050",
+      "website": "https://example.com/provo-print-studio",
+      "displayUrl": "provoprint.example",
+      "image": "provo-print-studio.webp",
+      "membershipLevel": 1,
+      "category": "Printing",
+      "tagline": "Design, custom apparel, and large format"
+    },
+    {
+      "name": "Mountain View Realty",
+      "address": "742 East 820 North, Provo, UT 84606",
+      "phone": "(801) 555-6060",
+      "website": "https://example.com/mountain-view-realty",
+      "displayUrl": "mountainviewrealty.example",
+      "image": "mountain-view-realty.webp",
+      "membershipLevel": 3,
+      "category": "Real Estate",
+      "tagline": "Your partner in Utah real estate"
+    },
+    {
+      "name": "BYU Corner Books",
+      "address": "990 North University Avenue, Provo, UT 84604",
+      "phone": "(801) 555-7070",
+      "website": "https://example.com/byu-corner-books",
+      "displayUrl": "byucornerbooks.example",
+      "image": "byu-corner-books.webp",
+      "membershipLevel": 2,
+      "category": "Retail",
+      "tagline": "Books, supplies, and gifts for students"
+    }
+  ]
+}

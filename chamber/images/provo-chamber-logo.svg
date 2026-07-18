@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Provo Chamber of Commerce Alternative Logo</title>
+  <desc id="logo-desc">A professional shield-style navy, gold, and white SVG logo for Provo Chamber of Commerce.</desc>
+
+  <defs>
+    <linearGradient id="navy" x1="90" y1="60" x2="510" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#123b5d"/>
+      <stop offset="1" stop-color="#061f38"/>
+    </linearGradient>
+
+    <linearGradient id="gold" x1="160" y1="80" x2="460" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9d77c"/>
+      <stop offset="1" stop-color="#c5942b"/>
+    </linearGradient>
+
+    <linearGradient id="sky" x1="210" y1="150" x2="390" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9efff"/>
+      <stop offset="1" stop-color="#4c9ed1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer badge -->
+  <path d="M300 38 515 145v176c0 129-89 201-215 241C174 522 85 450 85 321V145Z" fill="url(#navy)"/>
+  <path d="M300 58 495 155v164c0 114-76 181-195 220C181 500 105 433 105 319V155Z" fill="none" stroke="url(#gold)" stroke-width="12"/>
+  <path d="M300 88 462 169v140c0 95-62 151-162 185-100-34-162-90-162-185V169Z" fill="none" stroke="#d7ad4d" stroke-width="4"/>
+
+  <!-- Mountain / Provo mark -->
+  <g transform="translate(0, 10)">
+    <path d="M155 300 245 190l55 72 36-46 109 132H155Z" fill="#ffffff" opacity="0.96"/>
+    <path d="M245 190 300 262 336 216 445 348h-89l-61-78-34 43-55-70-77 105h-74Z" fill="url(#sky)" opacity="0.95"/>
+    <path d="M300 155 373 201v111h-48v-86l-25-16-25 16v86h-48V201Z" fill="url(#gold)" opacity="0.92"/>
+    <path d="M246 312V215l54-35 54 35v97" fill="none" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" opacity="0.9"/>
+    <path d="M276 292v-54h22c21 0 35 13 35 31s-14 31-35 31h-22" fill="none" stroke="#123b5d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Text panel -->
+  <rect x="120" y="360" width="360" height="118" rx="18" fill="#ffffff"/>
+  <rect x="132" y="372" width="336" height="94" rx="12" fill="none" stroke="#d7ad4d" stroke-width="4"/>
+
+  <text x="300" y="412" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="800" fill="#0b2d4c" letter-spacing="3">PROVO</text>
+  <text x="300" y="451" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="800" fill="#0b2d4c" letter-spacing="2">CHAMBER</text>
+  <text x="300" y="506" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#d7ad4d" letter-spacing="3">OF COMMERCE</text>
+
+  <!-- Top and bottom details -->
+  <text x="300" y="142" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#d7ad4d" letter-spacing="2">PROVO, UTAH</text>
+  <text x="300" y="538" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="3">EST. 1912</text>
+</svg>
