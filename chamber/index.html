@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Provo Chamber of Commerce home page with local events, weather, business spotlights, and opportunities to join the chamber.">
+  <meta name="author" content="Osvaldo João">
+
+  <meta property="og:title" content="Provo Chamber of Commerce Home">
+  <meta property="og:description" content="Connect with Provo businesses, explore local events, view weather updates, and discover chamber member spotlights.">
+  <meta property="og:image" content="https://dequerene.github.io/wdd231/chamber/images/provo-chamber-social.webp">
+  <meta property="og:url" content="https://dequerene.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <title>Provo Chamber of Commerce Home | WDD 231</title>
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/home.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/provo-chamber-logo.svg" alt="Provo Chamber of Commerce logo" width="64" height="64">
+      <span>Provo Chamber of Commerce</span>
+    </div>
+    <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav id="navMenu" aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/provo-hero.webp" media="(min-width: 42rem)">
+        <img src="images/provo-hero-small.webp" alt="Downtown Provo with mountains and local business buildings" width="640" height="360">
+      </picture>
+      <div class="hero-content">
+        <h1>Welcome to the Provo Chamber of Commerce</h1>
+        <p>Connecting businesses, residents, and community leaders in Provo, Utah.</p>
+        <a class="cta-button" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <div class="home-sections">
+      <section class="home-card events-card">
+        <h2>Current Events</h2>
+        <article>
+          <h3>Business Networking Breakfast</h3>
+          <p>Join local business owners this Friday at 8:00 a.m. for networking, introductions, and community updates.</p>
+        </article>
+        <article>
+          <h3>Provo Small Business Workshop</h3>
+          <p>Learn strategies for marketing, customer service, and online visibility for small businesses.</p>
+        </article>
+      </section>
+
+      <section class="home-card weather-card">
+        <h2>Weather</h2>
+        <div id="current-weather">
+          <p>Loading current weather...</p>
+        </div>
+        <div id="forecast">
+          <h3>3-Day Forecast</h3>
+          <p>Loading forecast...</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="home-card spotlight-section">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights" class="spotlight-grid" aria-live="polite">
+        <section class="spotlight-card loading-card">
+          <h3>Loading Spotlight</h3>
+          <div class="image-placeholder"></div>
+          <p>Please wait while member spotlights load.</p>
+        </section>
+        <section class="spotlight-card loading-card">
+          <h3>Loading Spotlight</h3>
+          <div class="image-placeholder"></div>
+          <p>Please wait while member spotlights load.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Provo Chamber of Commerce</strong></p>
+      <p>111 Center Street</p>
+      <p>Provo, Utah 84601</p>
+      <p>info@provochamber.example</p>
+      <p>(801) 555-2300</p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+        <img src="images/youtube-social.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin-social.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/instagram-social.svg" alt="" width="36" height="36">
+      </a>
+    </div>
+
+    <div class="footer-info">
+      <p>WDD 231 Class Project</p>
+      <p>Osvaldo João</p>
+      <p>© <span id="currentyear"></span> Provo Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
