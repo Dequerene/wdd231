@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Provo Chamber of Commerce by completing a membership application form.">
+  <meta name="author" content="Osvaldo João">
+
+  <meta property="og:title" content="Join the Provo Chamber of Commerce">
+  <meta property="og:description" content="Apply to become a member of the Provo Chamber of Commerce and connect with local businesses.">
+  <meta property="og:image" content="https://dequerene.github.io/wdd231/chamber/images/provo-chamber-social.webp">
+  <meta property="og:url" content="https://dequerene.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <title>Join the Provo Chamber of Commerce | WDD 231</title>
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/provo-chamber-logo.svg" alt="Provo Chamber of Commerce logo" width="64" height="64">
+      <span>Provo Chamber of Commerce</span>
+    </div>
+    <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav id="navMenu" aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+      <section class="form-section">
+        <h2>Membership Application</h2>
+
+        <form method="get" action="thankyou.html" class="join-form">
+          <label>
+            First Name
+            <input type="text" name="first" title="Enter your first name" autocomplete="given-name" required>
+          </label>
+
+          <label>
+            Last Name
+            <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required>
+          </label>
+
+          <label>
+            Organizational Title
+            <input
+              type="text"
+              name="title"
+              title="Enter your organizational title. Use at least seven letters, spaces, or hyphens."
+              autocomplete="organization-title"
+              pattern="[A-Za-z -]{7,}"
+            >
+          </label>
+
+          <label>
+            Email Address
+            <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="name@example.com" required>
+          </label>
+
+          <label>
+            Mobile Phone Number
+            <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+          </label>
+
+          <label>
+            Business or Organization Name
+            <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+          </label>
+
+          <label>
+            Membership Level
+            <select name="membership" title="Choose a membership level" required>
+              <option value="">Select a Membership Level</option>
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>
+            Business or Organization Description
+            <textarea name="description" title="Describe your business or organization" rows="5"></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <input type="submit" value="Apply for Membership">
+        </form>
+      </section>
+
+      <section class="membership-section">
+        <h2>Membership Levels</h2>
+
+        <div class="membership-cards">
+          <section class="membership-card">
+            <h3>NP Membership</h3>
+            <p>For nonprofit organizations. No fee required.</p>
+            <button type="button" data-modal="np-modal">Learn More</button>
+          </section>
+
+          <section class="membership-card">
+            <h3>Bronze Membership</h3>
+            <p>Basic benefits for small businesses.</p>
+            <button type="button" data-modal="bronze-modal">Learn More</button>
+          </section>
+
+          <section class="membership-card">
+            <h3>Silver Membership</h3>
+            <p>More visibility and event discounts.</p>
+            <button type="button" data-modal="silver-modal">Learn More</button>
+          </section>
+
+          <section class="membership-card">
+            <h3>Gold Membership</h3>
+            <p>Premium benefits and spotlight opportunities.</p>
+            <button type="button" data-modal="gold-modal">Learn More</button>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <dialog id="np-modal">
+      <h2>NP Membership Benefits</h2>
+      <p>This level is designed for nonprofit organizations and has no membership fee.</p>
+      <ul>
+        <li>Community event invitations</li>
+        <li>Basic directory listing</li>
+        <li>Networking opportunities</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal">
+      <h2>Bronze Membership Benefits</h2>
+      <p>This level is a good starting option for small businesses.</p>
+      <ul>
+        <li>Business directory listing</li>
+        <li>Chamber newsletter updates</li>
+        <li>Access to selected training events</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal">
+      <h2>Silver Membership Benefits</h2>
+      <p>This level gives businesses more promotion and participation opportunities.</p>
+      <ul>
+        <li>Enhanced directory listing</li>
+        <li>Event discounts</li>
+        <li>Social media mentions</li>
+        <li>Training and workshop access</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal">
+      <h2>Gold Membership Benefits</h2>
+      <p>This level provides the highest visibility and premium chamber benefits.</p>
+      <ul>
+        <li>Premium directory listing</li>
+        <li>Homepage spotlight opportunities</li>
+        <li>Priority event promotion</li>
+        <li>Special event discounts</li>
+        <li>Business leadership networking</li>
+      </ul>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Provo Chamber of Commerce</strong></p>
+      <p>111 Center Street</p>
+      <p>Provo, Utah 84601</p>
+      <p>info@provochamber.example</p>
+      <p>(801) 555-2300</p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+        <img src="images/youtube-social.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin-social.svg" alt="" width="36" height="36">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/instagram-social.svg" alt="" width="36" height="36">
+      </a>
+    </div>
+
+    <div class="footer-info">
+      <p>WDD 231 Class Project</p>
+      <p>Osvaldo João</p>
+      <p>© <span id="currentyear"></span> Provo Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
