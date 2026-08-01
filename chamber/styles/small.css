@@ -499,16 +499,20 @@ h2 {
   border-color: var(--primary-color);
 }
 
-.join-form input[type="submit"] {
+.join-form .submit-button {
+  min-height: 44px;
+  padding: 0.75rem;
   border: none;
+  border-radius: 0.35rem;
   color: #ffffff;
   background-color: var(--primary-color);
+  font: inherit;
   font-weight: 700;
   cursor: pointer;
 }
 
-.join-form input[type="submit"]:hover,
-.join-form input[type="submit"]:focus-visible {
+.join-form .submit-button:hover,
+.join-form .submit-button:focus-visible {
   background-color: var(--secondary-color);
 }
 
