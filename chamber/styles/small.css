@@ -661,3 +661,130 @@ footer p {
 .footer-info {
   text-align: left;
 }
+
+/* Discover Page */
+.discover-intro,
+.visit-card,
+.discover-section {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.65rem;
+  background-color: var(--card-color);
+  box-shadow: var(--shadow);
+}
+
+.discover-intro p,
+.visit-card p {
+  margin-bottom: 0;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1rem;
+}
+
+.card-1 {
+  grid-area: card1;
+}
+
+.card-2 {
+  grid-area: card2;
+}
+
+.card-3 {
+  grid-area: card3;
+}
+
+.card-4 {
+  grid-area: card4;
+}
+
+.card-5 {
+  grid-area: card5;
+}
+
+.card-6 {
+  grid-area: card6;
+}
+
+.card-7 {
+  grid-area: card7;
+}
+
+.card-8 {
+  grid-area: card8;
+}
+
+.place-card {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 0.65rem;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.place-card h2 {
+  padding: 1rem 1rem 0.35rem;
+  font-size: 1.25rem;
+}
+
+.place-card figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.place-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.place-card address {
+  padding: 0.85rem 1rem 0;
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.place-card p {
+  padding: 0 1rem;
+}
+
+.place-card button {
+  min-height: 44px;
+  margin: 0 1rem 1rem;
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 0.35rem;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.place-card button:hover,
+.place-card button:focus-visible {
+  background-color: var(--secondary-color);
+}
+
+/* Large layout for Discover Page */
+@media screen and (min-width: 64.0625rem) {
+  .discover-grid {
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card5 card6"
+      "card7 card8 card8 card6";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

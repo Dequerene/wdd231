@@ -74,6 +74,25 @@
     align-items: start;
   }
 
+  .discover-grid {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .place-card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .place-card figure:hover img {
+    filter: saturate(1.2) contrast(1.05);
+    transform: scale(1.05);
+  }
+
   footer {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
