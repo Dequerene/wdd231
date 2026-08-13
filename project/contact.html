@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Apple Moz Store to request Apple product information, prices, and trusted buying guidance in Mozambique.">
+  <meta name="author" content="Osvaldo João">
+  <meta property="og:title" content="Contact Apple Moz Store">
+  <meta property="og:description" content="Send a product interest request and receive more information about Apple products in Mozambique.">
+  <meta property="og:image" content="https://dequerene.github.io/wdd231/final/images/apple-moz-social.webp">
+  <meta property="og:url" content="https://dequerene.github.io/wdd231/final/contact.html">
+  <meta property="og:type" content="website">
+  <title>Contact | Apple Moz Store</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/contact.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="Apple Moz Store logo" width="56" height="56">
+      <span>Apple Moz Store</span>
+    </div>
+    <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav id="primary-nav" aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Contact the Store</h1>
+
+    <div class="contact-layout">
+      <section class="contact-card">
+        <h2>Product Interest Form</h2>
+
+        <form class="contact-form" method="get" action="thankyou.html">
+          <label>
+            First Name
+            <input id="first" type="text" name="first" title="Enter your first name" autocomplete="given-name" required>
+          </label>
+
+          <label>
+            Last Name
+            <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="name@example.com" required>
+          </label>
+
+          <label>
+            Phone
+            <input type="tel" name="phone" title="Enter your phone number" autocomplete="tel" required>
+          </label>
+
+          <label>
+            Product Interest
+            <select id="product" name="product" title="Choose a product" required>
+              <option value="">Choose a product</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" title="Write your message" rows="5" placeholder="Tell us what product information you need."></textarea>
+          </label>
+
+          <input type="hidden" id="timestamp" name="timestamp">
+          <button type="submit">Send Request</button>
+        </form>
+      </section>
+
+      <aside class="section-card">
+        <h2>Store Purpose</h2>
+        <p>This form helps customers ask for more product details, compare options, and request trusted buying guidance for Mozambique.</p>
+        <p><strong>Location focus:</strong> Mozambique</p>
+        <p><strong>Currency:</strong> Mozambican Metical</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Apple Moz Store</strong></p>
+      <p>WDD 231 Final Project</p>
+      <p>© <span id="currentyear"></span> Osvaldo João</p>
+      <p id="lastModified"></p>
+    </div>
+    <div class="footer-links">
+      <a href="attributions.html">Attributions</a>
+      <a href="https://youtu.be/replace-with-your-video" target="_blank" rel="noopener">Video Demonstration</a>
+    </div>
+  </footer>
+</body>
+</html>

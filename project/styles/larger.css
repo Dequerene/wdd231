@@ -1,0 +1,14 @@
+@media screen and (min-width: 42rem) {
+  #menu { display: none; }
+  nav { display: block; }
+  nav ul { display: flex; }
+  nav li { flex: 1 1 100%; }
+  nav a { text-align: center; border-top: none; }
+  main { padding: 1.5rem; }
+  .hero { grid-template-columns: 1.05fr .95fr; align-items: center; padding: 1.5rem; }
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+  .reason-grid { grid-template-columns: repeat(3, 1fr); }
+  .product-grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .contact-layout { grid-template-columns: 1.3fr .7fr; align-items: start; }
+  footer { grid-template-columns: 1fr 1fr; align-items: center; }
+}

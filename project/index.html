@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apple Moz Store helps customers in Mozambique compare Apple products, prices, and trusted buying options.">
+  <meta name="author" content="Osvaldo João">
+  <meta property="og:title" content="Apple Moz Store for Mozambique">
+  <meta property="og:description" content="Compare Apple products, prices in Metical, and trusted buying information for Mozambique.">
+  <meta property="og:image" content="https://dequerene.github.io/wdd231/final/images/apple-moz-social.webp">
+  <meta property="og:url" content="https://dequerene.github.io/wdd231/final/index.html">
+  <meta property="og:type" content="website">
+  <title>Apple Moz Store Home | WDD 231</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="Apple Moz Store logo" width="56" height="56">
+      <span>Apple Moz Store</span>
+    </div>
+    <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav id="primary-nav" aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Apple Products for Mozambique</h1>
+        <p>Find clear product information, compare prices in Metical, and learn safer buying options before choosing your next Apple device.</p>
+        <div class="cta-row">
+          <a class="button" href="products.html">View Products</a>
+          <a class="button secondary" href="contact.html">Request Information</a>
+        </div>
+      </div>
+      <img src="images/hero-apple-mozambique.webp" alt="Apple products and Mozambique store introduction" width="1280" height="720">
+    </section>
+
+    <section class="visit-card">
+      <h2>Welcome</h2>
+      <p id="visit-message">Loading visit information...</p>
+    </section>
+
+    <section class="section-card">
+      <h2>Featured iPhones</h2>
+      <div id="featured-products" class="feature-grid"></div>
+    </section>
+
+    <section class="section-card">
+      <h2>Why This Site Helps</h2>
+      <div class="reason-grid">
+        <article class="reason-card">
+          <h3>Clear Prices</h3>
+          <p>Prices are shown in Mozambican Metical to make comparison easier for local customers.</p>
+        </article>
+        <article class="reason-card">
+          <h3>Trusted Information</h3>
+          <p>The site organizes product details so visitors can make better decisions before buying.</p>
+        </article>
+        <article class="reason-card">
+          <h3>Simple Contact</h3>
+          <p>Customers can send a product interest request and receive more information from the store.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Apple Moz Store</strong></p>
+      <p>WDD 231 Final Project</p>
+      <p>© <span id="currentyear"></span> Osvaldo João</p>
+      <p id="lastModified"></p>
+    </div>
+    <div class="footer-links">
+      <a href="attributions.html">Attributions</a>
+      <a href="https://youtu.be/replace-with-your-video" target="_blank" rel="noopener">Video Demonstration</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Apple products for Mozambique with categories, prices, storage, availability, and product details.">
+  <meta name="author" content="Osvaldo João">
+  <meta property="og:title" content="Apple Moz Store Product Catalog">
+  <meta property="og:description" content="Browse iPhones, MacBooks, iPads, watches, accessories, and buying information for Mozambique.">
+  <meta property="og:image" content="https://dequerene.github.io/wdd231/final/images/apple-moz-social.webp">
+  <meta property="og:url" content="https://dequerene.github.io/wdd231/final/products.html">
+  <meta property="og:type" content="website">
+  <title>Products | Apple Moz Store</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/products.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="Apple Moz Store logo" width="56" height="56">
+      <span>Apple Moz Store</span>
+    </div>
+    <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav id="primary-nav" aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active" aria-current="page">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Product Catalog</h1>
+
+    <section class="section-card">
+      <h2>Filter Products</h2>
+      <div class="filter-panel" aria-label="Product filters">
+        <button class="filter-button active" data-category="all" type="button">All</button>
+        <button class="filter-button" data-category="iPhone" type="button">iPhone</button>
+        <button class="filter-button" data-category="MacBook" type="button">MacBook</button>
+        <button class="filter-button" data-category="iPad" type="button">iPad</button>
+        <button class="filter-button" data-category="Watch" type="button">Watch</button>
+        <button class="filter-button" data-category="Accessories" type="button">Accessories</button>
+      </div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    </section>
+
+    <dialog id="product-modal" class="product-modal">
+      <div id="modal-content"></div>
+      <button class="modal-close" type="button">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Apple Moz Store</strong></p>
+      <p>WDD 231 Final Project</p>
+      <p>© <span id="currentyear"></span> Osvaldo João</p>
+      <p id="lastModified"></p>
+    </div>
+    <div class="footer-links">
+      <a href="attributions.html">Attributions</a>
+      <a href="https://youtu.be/replace-with-your-video" target="_blank" rel="noopener">Video Demonstration</a>
+    </div>
+  </footer>
+</body>
+</html>

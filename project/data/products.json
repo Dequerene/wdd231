@@ -1,0 +1,169 @@
+{
+  "products": [
+    {
+      "id": "iphone-15",
+      "name": "iPhone 15",
+      "category": "iPhone",
+      "price": "59,900 MZN",
+      "storage": "128 GB",
+      "description": "48 MP camera, A16 chip, USB-C",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "iphone-15.webp"
+    },
+    {
+      "id": "iphone-15-plus",
+      "name": "iPhone 15 Plus",
+      "category": "iPhone",
+      "price": "68,900 MZN",
+      "storage": "128 GB",
+      "description": "Large display, long battery, USB-C",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "iphone-15-plus.webp"
+    },
+    {
+      "id": "iphone-16",
+      "name": "iPhone 16",
+      "category": "iPhone",
+      "price": "79,900 MZN",
+      "storage": "128 GB",
+      "description": "Fast performance, improved camera, modern design",
+      "availability": "Limited stock",
+      "warranty": "6-month seller warranty",
+      "image": "iphone-16.webp"
+    },
+    {
+      "id": "iphone-16-pro",
+      "name": "iPhone 16 Pro",
+      "category": "iPhone",
+      "price": "114,900 MZN",
+      "storage": "256 GB",
+      "description": "Pro display, premium camera, titanium style",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "iphone-16-pro.webp"
+    },
+    {
+      "id": "macbook-air-m2",
+      "name": "MacBook Air M2",
+      "category": "MacBook",
+      "price": "89,900 MZN",
+      "storage": "256 GB",
+      "description": "Lightweight laptop for school, business, and travel",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "macbook-air-m2.webp"
+    },
+    {
+      "id": "macbook-air-m3",
+      "name": "MacBook Air M3",
+      "category": "MacBook",
+      "price": "119,900 MZN",
+      "storage": "512 GB",
+      "description": "Fast laptop with strong battery life",
+      "availability": "Limited stock",
+      "warranty": "6-month seller warranty",
+      "image": "macbook-air-m3.webp"
+    },
+    {
+      "id": "macbook-pro-14",
+      "name": "MacBook Pro 14",
+      "category": "MacBook",
+      "price": "189,900 MZN",
+      "storage": "512 GB",
+      "description": "Powerful performance for creative and professional work",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "macbook-pro-14.webp"
+    },
+    {
+      "id": "ipad-10",
+      "name": "iPad 10th Gen",
+      "category": "iPad",
+      "price": "39,900 MZN",
+      "storage": "64 GB",
+      "description": "Colorful tablet for study, media, and daily tasks",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "ipad-10.webp"
+    },
+    {
+      "id": "ipad-air",
+      "name": "iPad Air",
+      "category": "iPad",
+      "price": "69,900 MZN",
+      "storage": "128 GB",
+      "description": "Thin design, strong performance, Apple Pencil support",
+      "availability": "Limited stock",
+      "warranty": "6-month seller warranty",
+      "image": "ipad-air.webp"
+    },
+    {
+      "id": "ipad-pro",
+      "name": "iPad Pro",
+      "category": "iPad",
+      "price": "129,900 MZN",
+      "storage": "256 GB",
+      "description": "Premium tablet for design, video, and productivity",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "ipad-pro.webp"
+    },
+    {
+      "id": "apple-watch-se",
+      "name": "Apple Watch SE",
+      "category": "Watch",
+      "price": "29,900 MZN",
+      "storage": "40 mm",
+      "description": "Fitness tracking, notifications, and daily health features",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "apple-watch-se.webp"
+    },
+    {
+      "id": "apple-watch-series",
+      "name": "Apple Watch Series",
+      "category": "Watch",
+      "price": "49,900 MZN",
+      "storage": "45 mm",
+      "description": "Advanced health features and bright display",
+      "availability": "Limited stock",
+      "warranty": "6-month seller warranty",
+      "image": "apple-watch-series.webp"
+    },
+    {
+      "id": "airpods-pro",
+      "name": "AirPods Pro",
+      "category": "Accessories",
+      "price": "19,900 MZN",
+      "storage": "USB-C Case",
+      "description": "Noise cancellation and comfortable wireless listening",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "airpods-pro.webp"
+    },
+    {
+      "id": "apple-tv-4k",
+      "name": "Apple TV 4K",
+      "category": "Accessories",
+      "price": "24,900 MZN",
+      "storage": "64 GB",
+      "description": "Streaming, movies, music, and family entertainment",
+      "availability": "Available by request",
+      "warranty": "6-month seller warranty",
+      "image": "apple-tv-4k.webp"
+    },
+    {
+      "id": "mag-safe-charger",
+      "name": "MagSafe Charger",
+      "category": "Accessories",
+      "price": "4,900 MZN",
+      "storage": "15W",
+      "description": "Wireless charging accessory for compatible iPhones",
+      "availability": "Limited stock",
+      "warranty": "6-month seller warranty",
+      "image": "mag-safe-charger.webp"
+    }
+  ]
+}
